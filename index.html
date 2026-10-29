@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roast Cafe | Ana Sayfa</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased m-0">
+
+  <!-- 1. ÜST MENÜ (NAVBAR) -->
+  <header class="bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50 px-6 py-4">
+    <nav class="max-w-4xl mx-auto flex justify-between items-center">
+      <strong class="text-amber-500 text-xl md:text-2xl tracking-wide">☕ Roast Cafe</strong>
+      <ul class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+        <li><a href="#menu" class="hover:text-amber-400 transition">Menü</a></li>
+        <li><a href="#fiyatlar" class="hover:text-amber-400 transition">Fiyatlar</a></li>
+        <li><a href="#rezervasyon" class="hover:text-amber-400 transition">Rezervasyon</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 2. ANA GÖVDE -->
+  <main class="max-w-4xl mx-auto px-4 py-8 md:py-12 space-y-16">
+
+    <!-- KARŞILAMA BÖLÜMÜ -->
+    <section class="text-center py-8">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-amber-500 mb-4 tracking-tight">
+        Her Yudumda Taze Kavrulmuş Mükemmellik
+      </h1>
+      <p class="text-zinc-400 text-base md:text-lg max-w-xl mx-auto">
+        Mahallemizin en sıcak köşesinde, <strong class="text-zinc-200">%100 Arabica</strong> çekirdekleriyle hazırlanan kahvelerimizle tanışın.
+      </p>
+    </section>
+
+    <!-- MENÜ BÖLÜMÜ (Responsive Grid) -->
+    <section id="menu">
+      <h2 class="text-2xl font-bold text-amber-500 mb-6 border-b border-zinc-800 pb-3 flex items-center gap-2">
+        📜 Öne Çıkan Menümüz
+      </h2>
+
+      <!-- Mobilde 1 sütun, bilgisayarda (md) 2 sütun -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- V60 Kartı -->
+        <article class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl hover:border-amber-500/50 hover:-translate-y-1.5 transition duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold mb-3 text-zinc-100">V60 El Demlemesi</h3>
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="V60 Demleme" class="rounded-xl w-full h-48 object-cover mb-4">
+          <p class="text-zinc-400 text-sm mb-4"><em>Çiçeksi ve meyvemsi</em> aromalarıyla sabahların vazgeçilmezi.</p>
+          <span class="text-emerald-400 font-bold text-lg">110 TL</span>
+        </article>
+
+        <!-- Spanish Latte Kartı -->
+        <article class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl hover:border-amber-500/50 hover:-translate-y-1.5 transition duration-300 shadow-xl">
+          <h3 class="text-xl font-semibold mb-3 text-zinc-100">Iced Spanish Latte</h3>
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400" alt="Spanish Latte" class="rounded-xl w-full h-48 object-cover mb-4">
+          <p class="text-zinc-400 text-sm mb-4">Yoğun espresso ve tatlandırılmış soğuk sütün kusursuz uyumu.</p>
+          <span class="text-emerald-400 font-bold text-lg">135 TL</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FİYAT TABLOSU BÖLÜMÜ -->
+    <section id="fiyatlar">
+      <h2 class="text-2xl font-bold text-amber-500 mb-6 border-b border-zinc-800 pb-3">
+        💰 Tüm Fiyat Listemiz
+      </h2>
+      <div class="overflow-x-auto rounded-xl border border-zinc-800 shadow-lg">
+        <table class="w-full text-left border-collapse bg-zinc-900">
+          <thead>
+            <tr class="bg-zinc-800/60 text-amber-400 border-b border-zinc-800 text-sm md:text-base">
+              <th class="p-4">Ürün Adı</th>
+              <th class="p-4">Kategori</th>
+              <th class="p-4">Küçük Boy</th>
+              <th class="p-4">Büyük Boy</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-800 text-sm text-zinc-300">
+            <tr class="hover:bg-zinc-800/30 transition">
+              <td class="p-4 font-medium">Filtre Kahve</td>
+              <td class="p-4 text-zinc-400">Sıcak Kahve</td>
+              <td class="p-4">80 TL</td>
+              <td class="p-4">95 TL</td>
+            </tr>
+            <tr class="hover:bg-zinc-800/30 transition">
+              <td class="p-4 font-medium">Iced Spanish Latte</td>
+              <td class="p-4 text-zinc-400">Soğuk Kahve</td>
+              <td class="p-4">120 TL</td>
+              <td class="p-4">135 TL</td>
+            </tr>
+            <tr class="hover:bg-zinc-800/30 transition">
+              <td class="p-4 font-medium">Bademli Kruvasan</td>
+              <td class="p-4 text-zinc-400">Tatlı / Fırın</td>
+              <td class="p-4">-</td>
+              <td class="p-4">120 TL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- REZERVASYON FORMU BÖLÜMÜ -->
+    <section id="rezervasyon" class="bg-zinc-900 border-2 border-amber-500/30 p-6 md:p-8 rounded-2xl shadow-2xl">
+      <h2 class="text-2xl font-bold text-amber-500 mb-2">📅 Masa Rezervasyonu Yapın</h2>
+      <p class="text-zinc-400 text-sm mb-6">Kalabalığa takılmadan masanızı şimdiden ayırın.</p>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-zinc-300 mb-1">Adınız Soyadınız:</label>
+          <input type="text" placeholder="Örn: Ahmet Yılmaz" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white focus:border-amber-500 focus:outline-none transition">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-zinc-300 mb-1">Telefon Numaranız:</label>
+          <input type="tel" placeholder="05XX XXX XX XX" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white focus:border-amber-500 focus:outline-none transition">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-zinc-300 mb-1">Geleceğiniz Tarih ve Saat:</label>
+          <input type="datetime-local" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white focus:border-amber-500 focus:outline-none transition">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-zinc-300 mb-1">Kişi Sayısı:</label>
+          <select class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white focus:border-amber-500 focus:outline-none transition">
+            <option>1 Kişi (Çalışma Masası)</option>
+            <option>2 Kişi</option>
+            <option>3-4 Kişi</option>
+            <option>5+ Kişi (Grup / Toplantı)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-zinc-300 mb-1">Özel Notunuz (İsteğe Bağlı):</label>
+          <textarea rows="3" placeholder="Priz kenarı, cam kenarı vb." class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-white focus:border-amber-500 focus:outline-none transition"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-zinc-950 font-bold py-3 rounded-lg transition transform active:scale-95 cursor-pointer shadow-lg shadow-amber-500/10">
+          Rezervasyonu Tamamla
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 3. FOOTER -->
+  <footer class="bg-zinc-900 border-t border-zinc-800 text-center py-8 text-zinc-400 text-sm mt-20">
+    <p>📍 Adres: Bağdat Cad. No:123 | ⏰ Her gün: 08:00 - 23:00</p>
+    <p class="mt-2 text-zinc-600">&copy; 2026 Roast Cafe. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>
